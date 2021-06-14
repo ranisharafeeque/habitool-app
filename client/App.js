@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './stylesheets/App.css';
 
 // Screens Imports
-// import DashboardScreen from './screens/DashboardScreen';
-// import HabitScreen from './screens/HabitScreen';
+import DashboardScreen from './screens/DashboardScreen';
+import HabitScreen from './screens/HabitScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignupScreen from './screens/SignupScreen';
 
@@ -27,8 +27,18 @@ const App = () => {
       {/* <h1>Hello From HabiTool</h1> */}
       <main>
         <Switch>
-          <Route exact path='/signup' component={SignupScreen} />
-          <Route exact path='/' render={() => <LoginScreen isLoggedIn={loggedIn}  loggedInSetter={setLoggedIn} />} />
+          <Route exact path='/'>
+            <LoginScreen isLoggedIn={loggedIn}  loggedInSetter={setLoggedIn} />
+          </Route>
+          <Route exact path='/signup'>
+            <SignupScreen />
+          </Route>
+          <Route exact path='dashboard/habit/:id'>
+            <HabitScreen />
+          </Route>
+          <Route path='/dashboard'>
+            <DashboardScreen />
+          </Route>
         </Switch>
       </main>
     </Router>
