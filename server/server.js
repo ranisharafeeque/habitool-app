@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const path = require('path');
 const express = require('express');
 const app = express();
@@ -22,7 +21,6 @@ app.listen(PORT, () => {
   });
   
   module.exports = app;
-=======
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -76,4 +74,3 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
->>>>>>> dc738d0acb7e2e934eb6a2ad31d0fae6809dc46b
