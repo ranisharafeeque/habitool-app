@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const MONGO_URI =
   'mongodb+srv://db:db123@cluster0.spklt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-
+// mongodb+srv://ranisharafeeque:1Shuhaiba@cluster0.3bl8x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 // URI for local machine
 // const MONGO_URI = 'mongodb://localhost:27017/habitool';
 
